@@ -36,6 +36,21 @@ ul li::before {
   top: -0.35em; 
   /* use em or % */
 }
+.btn {
+  background-color: rgb(10,80,158);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 0px;
+  width: 1.5in;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: grey;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -54,8 +69,23 @@ ul li::before {
           <div class="w3-display-bottomleft w3-container w3-text-white">
             <h7><h2>Jason X. Dong</h2></h7>
           </div>
+          <!-- <div class="w3-display-bottomright w3-container w3-text-white">
+            <button class="btn"><i class="fa fa-download"></i> Download</button>
+          </div> -->
+          <a href="Jason_Dong_Resume.pdf" download="JasonDongResume.pdf">
+            <div class="w3-button w3-text-white w3-padding-large w3-display-bottomright"
+            style="background-color: rgb(10,80,158); margin-right: 0px;">
+              <i class="fa fa-download"></i>
+              Resum&eacute;
+            </div>
+          </a>
         </div>
-        <a href="/index.html"><div class="w3-button w3-text-white w3-padding-large w3-display-topleft" style="background-color: rgb(10,80,158); margin-left: 16px; margin-top: 16px;">« Home</div></a>
+        <a href="/index.html">
+          <div class="w3-button w3-text-white w3-padding-large w3-display-topleft"
+          style="background-color: rgb(10,80,158); margin-left: 16px; margin-top: 16px;">
+            « Home
+          </div>
+        </a>
         <div class="w3-container">
           <p>
             <i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:rgb(10,80,158)">
@@ -118,9 +148,9 @@ ul li::before {
             Current
           </span></h6>
           <p class="w3-margin-left">Biochemistry and Cell Biology, B.A. &nbsp;&nbsp;&nbsp;
-            <span class="w3-tag w3-round" style="background-color:rgb(10,80,158);">
+            <!-- <span class="w3-tag w3-round" style="background-color:rgb(10,80,158);">
               GPA: 3.3
-            </span>
+            </span> -->
           </p>
           <p class="w3-margin-left">Relevant coursework: Organic Chemistry (with lab), Experimental
             Biosciences, and Introduction to Statistics for Biosciences
